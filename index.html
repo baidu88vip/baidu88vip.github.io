@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   
   
@@ -16,11 +16,18 @@
   
     <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
   
-  <script src="/js/pace.min.js"></script>
+  <script src="/js/pace.min.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 </html>
+<head>
+<!-- 爆炸红心效果 -->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/firework.js"></script>
+
+</head>
 <body>
-<main class="content">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><main class="content">
   <section class="jumbotron">
   <div class="video">
     
@@ -84,7 +91,7 @@
       
       
       
-        <p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
+        <p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。66</p>
 <p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
 <p><strong>示例:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">给定 nums = [2, 7, 11, 15], target = 9</span><br><span class="line"></span><br><span class="line">因为 nums[0] + nums[1] = 2 + 7 = 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
@@ -93,7 +100,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[j] == target - nums[i]) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; i, j &#125;;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>复杂度分析：</strong></p>
 <ul>
-<li>时间复杂度：O($n^2$)， 对于每个元素，我们试图通过遍历数组的其余部分来寻找它所对应的目标元素，这将耗费 O(n)的时间。因此时间复杂度为 O($n^2$)。</li>
+<li>时间复杂度：O($n^2​$)， 对于每个元素，我们试图通过遍历数组的其余部分来寻找它所对应的目标元素，这将耗费 O(n)的时间。因此时间复杂度为 O($n^2​$)。</li>
 <li>空间复杂度：O(1)。 </li>
 </ul>
 <hr>
@@ -118,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://baidu88vip.github.io/2019/03/11/1、两数之和/" data-id="cjt46dpad0000nsu6xycnzm8g" class="article-share-link">分享</a>
+      <a data-url="http://baidu88vip.github.io/2019/03/11/1、两数之和/" data-id="cjtvru95k0002pcu6bbtg9uga" class="article-share-link">分享</a>
       
     </footer>
 
@@ -177,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://baidu88vip.github.io/2019/02/22/Python实现网页自动截图/" data-id="cjt46dpam0001nsu6fizgvcub" class="article-share-link">分享</a>
+      <a data-url="http://baidu88vip.github.io/2019/02/22/Python实现网页自动截图/" data-id="cjtvru9560000pcu6fi5xjmfv" class="article-share-link">分享</a>
       
     </footer>
 
@@ -233,7 +240,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://baidu88vip.github.io/2019/01/25/hello-world/" data-id="cjt46dpaq0002nsu6itq7yacl" class="article-share-link">分享</a>
+      <a data-url="http://baidu88vip.github.io/2019/01/25/hello-world/" data-id="cjtvru95p0004pcu6gzg4mquw" class="article-share-link">分享</a>
       
     </footer>
 
@@ -340,5 +347,5 @@
 
 <script src="/js/ocean.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":190},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":190},"mobile":{"show":true},"log":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>
